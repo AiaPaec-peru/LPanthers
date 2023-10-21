@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+
+  }
+
+  .header {
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .nav {  /*Contenedor nav*/
+    display: flex;
+    justify-content: space-between;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+  .nav-link { /*Todos los a del nav*/
+    text-decoration: none;
+    color: #135d96;
+  }
+
+  .logo {  /*la palabra o logo*/
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 0px;
+    line-height: 80px; /*lo centra con respecto al nav*/
+    letter-spacing: 1.2px;
+    color: #135d96;
+  }
+
+  
+
+  .nav-menu {
+    display: flex;
+    list-style: none;
+  }
+
+  
+  .nav-menu-item {
+    font-size: 14px;
+    margin: 0 15px;
+    line-height: 80px;
+    text-transform: capitalize;
+    letter-spacing: .9px;
+    width: max-content;
+    color: #135d96;
+  }
+
+  .nav-menu-link {
+    border-radius: 3px;
+    position: relative;
+    color: #135d96;
+  }
+
+
+  /*Para el efecto de subrayado*/
+ .nav-menu-link::before {
+     content: "";
+     position: absolute;
+     bottom: -3px;
+     left: 0;
+     right: 100%;
+     height: 2px;
+     background-color: #135d96;
+     transition: right 0.9s;
+ }
+
+ .nav-menu-link:hover::before,
+ .nav-active {
+     right: 0;
+ }
+
+  /* TOGGLE */
+  .nav-toggle {
+    color: #135d96;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+  }
+
+
+  .logo-img{
+    height: 80px;
+    width: 80px;
+    display: flex;
+  }
+
+.logo-img img{
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    margin: auto;
+  }
+/*///////////////////////////////////////////////////////////////////*/
+/*///////////////////////////// Fin Header///////////////////////////*/
+/*///////////////////////////////////////////////////////////////////*/
+/* Estilo para el contenedor del carrusel */
+
+.hero{
+    /* width: 100%; */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    max-width: 1080px;
+    margin: auto;
+
+    height: calc(100vh - 80px);
+    align-items: center;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.carousel-slide img {
+    width: 180px
+    /* height: auto; */
+}
+
+.carousel-prev, .carousel-next {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.titulo h1{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-left: 220px;
+    /* margin-bottom: 15px; */
+}

@@ -1,0 +1,54 @@
+     /*////////////////////////*/
+    /*BOOSTRAP*/
+    /*///////////////////////*/
+/* #contenS{
+     margin: 10px 10px 10px 10px;
+} */
+
+.formulario{
+     margin: 10px 10px 10px 10px;
+     width: 500px;
+     align-items: center ;
+     /* border: solid blue; */
+}
+
+.contenedorForm{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height:  calc(100vh - 56px);
+}
+
+.bImg img{
+     width: 300px;
+     margin-left: 50px;
+}
+
+@media (max-width: 599px) {
+     .contenedorForm{
+
+          display: flex;
+         flex-direction: column;
+         max-width: calc(100% - 50px);
+         margin: auto;
+          
+     }
+
+     .formulario{
+          margin: 10px 10px 10px 10px;
+          align-items: center ;
+          width: 100%;
+          /* border: solid blue; */
+     }
+
+     .bImg img{
+          width: 100%;
+          margin-left: 0px;
+     }
+
+
+     .form-control{
+          width: calc(100% - 20px);
+     }
+     
+}
